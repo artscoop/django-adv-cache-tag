@@ -425,7 +425,7 @@ class CacheTag(object):
         """
         try:
              self.load_content()
-        except template.TemplateSyntaxError, e:
+        except template.TemplateSyntaxError as e:
             raise e
         except:
             return ''
